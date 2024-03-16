@@ -6,7 +6,6 @@ const StyledContainer = styled.div<{ $fluid?: boolean }>`
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px red solid;
 
     @media (min-width: 576px) {
         max-width: ${(props) => (props.$fluid ? "100%" : "540px")};
