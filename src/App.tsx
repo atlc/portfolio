@@ -1,23 +1,20 @@
 import { useState } from "react";
-// import reactLogo from './assets/react.svg'
 import Container from "./components/Layout/Container";
 import Row from "./components/Layout/Row";
 import Col from "./components/Layout/Col";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <Container>
             <Row>
                 <Col tenths={3}>
-                    <div>ayyy</div>
+                    <div>One</div>
                 </Col>
                 <Col tenths={3}>
-                    <div>luh</div>
+                    <div>Two</div>
                 </Col>
                 <Col tenths={3}>
-                    <div>mao</div>
+                    <div>Three</div>
                 </Col>
             </Row>
         </Container>
