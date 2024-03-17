@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from "react";
 import Row from "../Layout/Row";
 import Col from "../Layout/Col";
+import Navlink from "./Navlink";
+import Sun from "./Sun";
+import Moon from "./Moon";
+import Hamburger from "./Hamburger";
 
 const Nav: React.FC = () => {
-    const [isDark, setIsDark] = useState(true);
     const [height, setHeight] = useState(0);
+    const [isDark, setIsDark] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
+    const [collapsed, setCollapsed] = useState(false);
+
     const [style, setStyle] = useState<React.CSSProperties>({
         backgroundColor: document.body.style.backgroundColor,
         opacity: 1,
         top: 0,
-        marginTop: "75px",
-        paddingTop: "10px",
+        marginTop: "20px",
+        padding: "20px",
         position: "relative",
-        padding: "30px",
         fontSize: "1.5rem",
-        fontFamily: "'League Spartan', 'sans-serif'",
-        fontOpticalSizing: "auto",
-        fontStyle: "normal",
+        fontWeight: "light",
+        zIndex: 2,
     });
 
     const handleScroll = () => {
@@ -25,6 +30,8 @@ const Nav: React.FC = () => {
     };
 
     useEffect(() => {
+        setIsMobile(window.innerWidth <= 768);
+
         window.addEventListener("scroll", handleScroll);
 
         return () => {
@@ -58,12 +65,34 @@ const Nav: React.FC = () => {
     return (
         <nav style={style}>
             <Row>
-                <Col>bio</Col>
-                <Col>experience</Col>
-                <Col>projects</Col>
-                <Col>
-                    <div onClick={() => setIsDark(!isDark)}>{isDark ? "sun" : "moon"}</div>
-                </Col>
+                {!collapsed && (
+                    <>
+                        <Col>
+                            <Navlink link="#bio" text="bio" />
+                        </Col>
+                        <Col>
+                            <Navlink link="#experience" text="experience" />
+                        </Col>
+                        <Col>
+                            <Navlink link="#education" text="education" />
+                        </Col>
+                        <Col>
+                            <Navlink link="#projects" text="projects" />
+                        </Col>
+                        <Col>
+                            <div style={{ marginTop: "10px" }} onClick={() => setIsDark(!isDark)}>
+                                {isDark ? <Sun /> : <Moon />}
+                            </div>
+                        </Col>
+                    </>
+                )}
+                {isMobile && (
+                    <div style={{ opacity: 1 }} onClick={() => setCollapsed(!collapsed)}>
+                        <Col>
+                            <Hamburger />
+                        </Col>
+                    </div>
+                )}
             </Row>
         </nav>
     );

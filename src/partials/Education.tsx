@@ -2,11 +2,11 @@ import React from "react";
 import Section from "../components/Section";
 import Row from "../components/Layout/Row";
 
-export const Experience: React.FC = () => {
+export const Education: React.FC = () => {
     return (
-        <Section parentId="experience">
+        <Section parentId="education">
             <Row>
-                <p>Experience blah blah blah</p>
+                <p>Education blah blah blah</p>
             </Row>
         </Section>
     );
