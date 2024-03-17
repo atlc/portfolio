@@ -5,15 +5,18 @@ import Navlink from "./Navlink";
 import Sun from "./Sun";
 import Moon from "./Moon";
 import Hamburger from "./Hamburger";
+import useDarkMode from "../../hooks/useDarkMode";
 
 const Nav: React.FC = () => {
+    const { isDark, toggleDarkMode } = useDarkMode()!;
     const [height, setHeight] = useState(0);
-    const [isDark, setIsDark] = useState(true);
     const [isMobile, setIsMobile] = useState(false);
     const [collapsed, setCollapsed] = useState(false);
 
     const [style, setStyle] = useState<React.CSSProperties>({
+        color: "#38bdf8",
         backgroundColor: document.body.style.backgroundColor,
+        borderRadius: "12px",
         opacity: 1,
         top: 0,
         marginTop: "20px",
@@ -41,14 +44,15 @@ const Nav: React.FC = () => {
 
     useEffect(() => {
         document.body.style.backgroundColor = isDark ? "#1e293b" : "#cbd5e1";
-        document.body.style.color = isDark ? "#38bdf8" : "#0c4a6e";
+        document.body.style.color = isDark ? "#ffffff" : "#1e293b";
 
         const position = height ? "sticky" : "relative";
-        const opacity = height ? 0.66 : 1;
+        const opacity = height ? 0.85 : 1;
 
-        const derived = document.body.style.backgroundColor;
+        const color = isDark ? "#38bdf8" : "#0c4a6e";
+        const bg = document.body.style.backgroundColor;
 
-        const rgb = derived.replace("rgb(", "").replace(")", "").split(", ");
+        const rgb = bg.replace("rgb(", "").replace(")", "").split(", ");
         const [r, g, b] = rgb.map((num) => {
             const parsed = parseInt(num);
             const product = 0.75 * parsed;
@@ -57,10 +61,16 @@ const Nav: React.FC = () => {
         });
 
         const adjusted = `rgb(${r}, ${g}, ${b})`;
-        const backgroundColor = height ? adjusted : derived;
+        const backgroundColor = height ? adjusted : bg;
 
-        setStyle({ ...style, position, opacity, backgroundColor });
+        setStyle({ ...style, position, borderBottom: `1px solid ${color}`, opacity, color, backgroundColor });
     }, [height, isDark]);
+
+    const handleCollapseOnMobile = () => {
+        if (isMobile) {
+            setCollapsed(true);
+        }
+    };
 
     return (
         <nav style={style}>
@@ -68,30 +78,28 @@ const Nav: React.FC = () => {
                 {!collapsed && (
                     <>
                         <Col>
-                            <Navlink link="#bio" text="bio" />
+                            <Navlink onClick={handleCollapseOnMobile} link="#bio" text="about me" />
                         </Col>
                         <Col>
-                            <Navlink link="#experience" text="experience" />
+                            <Navlink onClick={handleCollapseOnMobile} link="#experience" text="experience" />
                         </Col>
                         <Col>
-                            <Navlink link="#education" text="education" />
+                            <Navlink onClick={handleCollapseOnMobile} link="#education" text="education" />
                         </Col>
                         <Col>
-                            <Navlink link="#projects" text="projects" />
+                            <Navlink onClick={handleCollapseOnMobile} link="#projects" text="projects" />
                         </Col>
                         <Col>
-                            <div style={{ marginTop: "10px" }} onClick={() => setIsDark(!isDark)}>
-                                {isDark ? <Sun /> : <Moon />}
-                            </div>
+                            <div onClick={toggleDarkMode}>{isDark ? <Sun /> : <Moon />}</div>
                         </Col>
                     </>
                 )}
                 {isMobile && (
-                    <div style={{ opacity: 1 }} onClick={() => setCollapsed(!collapsed)}>
-                        <Col>
-                            <Hamburger />
-                        </Col>
-                    </div>
+                    <Col>
+                        <div onClick={() => setCollapsed(!collapsed)}>
+                            <Hamburger isDark={isDark} />
+                        </div>
+                    </Col>
                 )}
             </Row>
         </nav>

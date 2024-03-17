@@ -7,8 +7,12 @@ const StyledNavlink = styled.a`
     color: inherit;
 `;
 
-const Navlink: React.FC<NavlinkProps> = ({ link, text }) => {
-    return <StyledNavlink href={link}>{text}</StyledNavlink>;
+const Navlink: React.FC<NavlinkProps> = ({ onClick, link, text }) => {
+    return (
+        <StyledNavlink onClick={onClick} href={link}>
+            {text}
+        </StyledNavlink>
+    );
 };
 
 export default Navlink;

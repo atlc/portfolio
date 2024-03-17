@@ -1,7 +1,9 @@
 import React from "react";
+import { HamburgerProps } from "../../types";
 
-const Hamburger: React.FC = () => {
-    const derivedColor = document.body.style.color;
+const Hamburger: React.FC<HamburgerProps> = ({ isDark }) => {
+    const bg = isDark ? "#38bdf8" : "#0c4a6e";
+    const color = !isDark ? "#38bdf8" : "#0c4a6e";
 
     return (
         <svg
@@ -39,7 +41,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: derivedColor,
+                        fill: bg,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}
@@ -54,7 +56,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(255,255,255)",
+                        fill: color,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}
@@ -70,7 +72,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(255,255,255)",
+                        fill: color,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}
@@ -86,7 +88,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(255,255,255)",
+                        fill: color,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}
@@ -102,7 +104,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(255,255,255)",
+                        fill: color,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}
@@ -118,7 +120,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(255,255,255)",
+                        fill: color,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}
@@ -134,7 +136,7 @@ const Hamburger: React.FC = () => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(255,255,255)",
+                        fill: color,
                         fillRule: "nonzero",
                         opacity: 1,
                     }}

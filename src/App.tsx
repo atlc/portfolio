@@ -11,8 +11,8 @@ const App = () => {
             <Nav />
             <main>
                 <Bio />
-                <Education />
                 <Experience />
+                <Education />
                 <Projects />
             </main>
         </Container>

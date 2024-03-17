@@ -17,6 +17,7 @@ export interface ColProps {
 }
 
 export interface NavlinkProps {
+    onClick?: () => void;
     link: string;
     text: string;
 }
@@ -24,4 +25,13 @@ export interface NavlinkProps {
 export interface SectionProps {
     parentId: string;
     children: React.ReactNode;
+    noBottomBorder?: boolean;
+}
+
+export interface CardProps {
+    children: React.ReactNode;
+}
+
+export interface HamburgerProps {
+    isDark?: boolean;
 }
