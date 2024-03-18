@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 export interface Job {
     name: string;
     is_relevant: boolean;
@@ -9,4 +11,13 @@ export interface Job {
     endDate: string;
     summary: string;
     highlights: string[];
+}
+
+export interface Project {
+    name: string;
+    description: string;
+    repo_url: string;
+    demo_url?: string;
+    images: string[];
+    badges: ReactElement[];
 }
