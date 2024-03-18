@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import headshot_full from "../assets/headshot_full.png";
+import headshot_full from "../../assets/headshot_full.png";
 
 const StyledImage = styled.img`
     width: 50%;

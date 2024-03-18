@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerProps } from "../../types";
+import { ContainerProps } from "../../types/props";
 import styled from "styled-components";
 
 const StyledContainer = styled.div<{ $fluid?: boolean }>`

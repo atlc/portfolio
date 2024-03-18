@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { RowProps } from "../../types";
+import { RowProps } from "../../types/props";
 
 const StyledRow = styled.div<{ $justify: string; $direction: string }>`
     display: flex;

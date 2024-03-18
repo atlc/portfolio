@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavlinkProps } from "../../types";
+import { NavlinkProps } from "../../types/props";
 
 const StyledNavlink = styled.a`
     text-decoration: none;

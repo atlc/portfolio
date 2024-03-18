@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SectionProps } from "../types";
+import { SectionProps } from "../../types/props";
 
 const StyledSection = styled.section<{ $noBottomBorder?: boolean }>`
     /* border-bottom: ${(props) => (props.$noBottomBorder ? "" : `1px solid ${document.body.style.color}`)}; */

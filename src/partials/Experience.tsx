@@ -1,16 +1,17 @@
 import React from "react";
-import Section from "../components/Section";
+import Section from "../components/Layout/Section";
 import Row from "../components/Layout/Row";
-import Card from "../components/Card";
-import Col from "../components/Layout/Col";
+import Card from "../components/General/Card";
+import JobCard from "../components/General/JobCard";
 
-export const Experience: React.FC = () => {
+const Experience: React.FC = () => {
     const jobs = [
         {
             name: "Covalence",
+            is_relevant: true,
             location: "Birmingham/Remote",
             description: "Full-Stack Web Development Bootcamp",
-            position: "Lead Instructor",
+            position: "Software Developer / Lead Instructor",
             url: "https://covalence.io/",
             startDate: "2020-11-01",
             endDate: "2024-06-01",
@@ -25,9 +26,10 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Hubbard Systems",
+            is_relevant: true,
             location: "Birmingham/Remote",
             description: "Accounting/Legal Software",
-            position: "Devops Analyst",
+            position: "Devops Engineer",
             url: "https://collectionpartnersolutions.com/",
             startDate: "2019-06-01",
             endDate: "2020-03-01",
@@ -43,6 +45,7 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Jefferson State Community College",
+            is_relevant: false,
             location: "Birmingham",
             description: "",
             position: "Computer Lab Assistant",
@@ -60,6 +63,7 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Caldwell Mill Animal Clinic",
+            is_relevant: false,
             location: "Birmingham",
             description: "Veterinary Clinic",
             position: "Kennel Technician",
@@ -73,6 +77,7 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Uber",
+            is_relevant: false,
             location: "Birmingham",
             description: "Rideshare operations",
             position: "Rideshare Driver",
@@ -87,6 +92,7 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Vincari",
+            is_relevant: true,
             location: "Birmingham/Remote",
             description: "Healthcare Operative Documentation/EMR",
             position: "Software Engineer",
@@ -103,6 +109,7 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Hubbard Systems",
+            is_relevant: true,
             location: "Birmingham/Remote",
             description: "Accounting/Legal Software",
             position: "Application System Analyst",
@@ -118,6 +125,7 @@ export const Experience: React.FC = () => {
         },
         {
             name: "Greystone Golf & Country Club",
+            is_relevant: false,
             location: "Birmingham",
             description: "",
             position: "Server, Bartender, Event Staff",
@@ -157,30 +165,14 @@ export const Experience: React.FC = () => {
     return (
         <Section parentId="experience">
             <Row>
-                {jobs.map(({ name, position, location, description, highlights, summary, url, startDate, endDate }, index) => (
-                    <Col key={`job-card-${index}`} tenths={6}>
-                        <Card>
-                            <div>
-                                <h3>{name}</h3>
-                                <p>{position}</p>
-                                <p>Location: {location}</p>
-                                <p>{description}</p>
-                                <p>{summary}</p>
-                                <ul>
-                                    {highlights.map((highlight, idx) => (
-                                        <li key={`job-highlight-${name}-${idx}`}>{highlight}</li>
-                                    ))}
-                                </ul>
-                                <p>
-                                    {new Date(startDate).getFullYear()} - {new Date(endDate).getFullYear()}
-                                    {/* Start Date: {startDate} | End Date: {endDate} ({getDurationString(startDate, endDate)}) */}
-                                </p>
-                                <a href={url}>{name}</a>
-                            </div>
-                        </Card>
-                    </Col>
-                ))}
+                <Card>
+                    {jobs.map((job, index) => (
+                        <JobCard {...job} key={`job-card-${index}`} />
+                    ))}
+                </Card>
             </Row>
         </Section>
     );
 };
+
+export default Experience;

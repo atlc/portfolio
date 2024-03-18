@@ -1,7 +1,7 @@
 import React from "react";
-import { CardProps } from "../types";
+import { CardProps } from "../../types/props";
 import styled from "styled-components";
-import useDarkMode from "../hooks/useDarkMode";
+import useDarkMode from "../../hooks/useDarkMode";
 
 const StyledCard = styled.article<{ $bg: string; $contrast: string }>`
     border-radius: 12px;
@@ -9,6 +9,7 @@ const StyledCard = styled.article<{ $bg: string; $contrast: string }>`
     background-color: ${(props) => props.$bg};
     backdrop-filter: blur(2px) saturate(100%) brightness(130%) contrast(${(props) => props.$contrast});
     padding: 5px 20px;
+    color: inherit;
 `;
 
 const Card: React.FC<CardProps> = ({ children }) => {

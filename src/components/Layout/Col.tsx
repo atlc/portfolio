@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ColProps } from "../../types";
+import { ColProps } from "../../types/props";
 
 const StyledCol = styled.div<{ $tenths?: number }>`
     min-width: 100%;
@@ -8,17 +8,17 @@ const StyledCol = styled.div<{ $tenths?: number }>`
     margin-top: 10px;
 
     @media (min-width: 576px) {
-        min-width: 90%;
+        min-width: 100%;
     }
 
     @media (min-width: 768px) {
-        min-width: ${(props) => (props.$tenths ? `${5 * props.$tenths}%` : "auto")};
-        max-width: ${(props) => (props.$tenths ? `${5 * props.$tenths}%` : "auto")};
+        min-width: ${(props) => (props.$tenths ? `${10 * props.$tenths}%` : "auto")};
+        max-width: ${(props) => (props.$tenths ? `${10 * props.$tenths}%` : "auto")};
     }
 
     @media (min-width: 992px) {
-        min-width: ${(props) => (props.$tenths ? `${8 * props.$tenths}%` : "auto")};
-        max-width: ${(props) => (props.$tenths ? `${8 * props.$tenths}%` : "auto")};
+        min-width: ${(props) => (props.$tenths ? `${10 * props.$tenths}%` : "auto")};
+        max-width: ${(props) => (props.$tenths ? `${10 * props.$tenths}%` : "auto")};
     }
 
     @media (min-width: 1200px) {

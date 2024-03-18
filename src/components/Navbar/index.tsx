@@ -44,7 +44,8 @@ const Nav: React.FC = () => {
 
     useEffect(() => {
         document.body.style.backgroundColor = isDark ? "#1e293b" : "#cbd5e1";
-        document.body.style.color = isDark ? "#ffffff" : "#1e293b";
+        // document.body.style.color = isDark ? "#cbd5e1" : "#1e293b";
+        document.body.style.color = isDark ? "#cbd5e1" : "#0c4a6e";
 
         const position = height ? "sticky" : "relative";
         const opacity = height ? 0.85 : 1;

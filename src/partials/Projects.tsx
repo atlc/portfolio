@@ -1,8 +1,8 @@
 import React from "react";
-import Section from "../components/Section";
+import Section from "../components/Layout/Section";
 import Row from "../components/Layout/Row";
 
-export const Projects: React.FC = () => {
+const Projects: React.FC = () => {
     return (
         <Section noBottomBorder parentId="projects">
             <Row>
@@ -31,3 +31,5 @@ export const Projects: React.FC = () => {
         </Section>
     );
 };
+
+export default Projects;

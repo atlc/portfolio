@@ -36,7 +36,7 @@ export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 const useDarkMode = () => {
     const context = useContext(DarkModeContext);
 
-    if (!context) return;
+    if (!context) throw new Error("Welp, I broke the context in some way");
 
     return context;
 };
