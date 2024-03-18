@@ -11,26 +11,34 @@ const Education: React.FC = () => {
                 <Col tenths={10}>
                     <Card>
                         <div style={{ padding: "20px" }}>
-                            <h2>B.S. Software Engineering (Present)</h2>
+                            {/* <h2>B.S. Software Engineering (Present)</h2>
                             <h4>Western Governors University</h4>
 
-                            <hr />
+                            <hr /> */}
 
-                            <h2>A.S. Mathematics (2024)</h2>
-                            <h4>Jefferson State Community College</h4>
+                            <h1>A.S. Mathematics </h1>
+                            <h3>Jefferson State Community College (2024)</h3>
                             <ul>
-                                <li>Gained membership to Mu Alpha Theta, the math honors society</li>
-                                <li>Attained a 3.3 GPA in my math courses, including Cal I, II, III, Statistics, Differential Equations, & Linear Algebra</li>
+                                <li>
+                                    <h4>Gained membership to Mu Alpha Theta, the math honors society</h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Attained a 3.3 GPA in my math courses, including Cal I, II, III, Statistics, Differential Equations, & Linear Algebra
+                                    </h4>
+                                </li>
                             </ul>
 
                             <hr />
 
-                            <h2>A.S. Computer Information Systems, Programming (2017)</h2>
-                            <h4>Jefferson State Community College</h4>
+                            <h1>A.S. CIS - Programming </h1>
+                            <h3>Jefferson State Community College (2017)</h3>
                             <ul>
                                 <li>
-                                    The recipient of the 2016 College Scholars award, an award of distinction given to a high-performing student on the College
-                                    Scholars' team
+                                    <h4>
+                                        The recipient of the 2016 College Scholars award, an award of distinction given to a high-performing student on the
+                                        College Scholars' team
+                                    </h4>
                                 </li>
                             </ul>
                         </div>

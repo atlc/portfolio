@@ -18,10 +18,11 @@ const Experience: React.FC = () => {
             summary:
                 "Fast-track coding bootcamp, teaching vital techs like Typescript, React, Node, MySQL. Hands-on projects and career support ensure seamless industry entry and graduate success.",
             highlights: [
-                "Led daily coding classes and 1-on-1 mentor sessions, tailoring support to diverse learners.",
-                "Created personalized video lab reviews for student assignments, enhancing comprehension.",
-                "Developed engaging tutorials for both our curriculum and for public videos.",
-                "Stayed updated on industry trends to contribute to both bootcamp and student successes.",
+                "Ran daily coding classes and 1-on-1 mentor sessions, tailoring support to diverse learners.",
+                "Created personalized video lab reviews for every student assignment, enhancing their comprehension of the materials.",
+                "Stayed updated on industry trends to keep curriculum materials up to date",
+                "Rewrote the backend section of the curriculum, developing new materials, videos, and labs",
+                "Developed engaging tutorials for public YouTube videos",
             ],
         },
         {
@@ -35,12 +36,12 @@ const Experience: React.FC = () => {
             endDate: "2020-03-01",
             summary: "A software company that provides a legal accounting app to aid businesses and law firms in managing accounts receivable.",
             highlights: [
-                "Pioneered DevOps department, automating internal processes.",
-                "Established Jenkins CI/CD workflow managing complex and diverse project pipelines.",
-                "Created Chrome extension to parse JSON and COBOL files into Markdown for API documentation.",
+                "Started DevOps department, automating internal processes.",
+                "Established CI/CD workflow with Jenkins, managing complex and diverse project pipelines to build a `COBOL` & `electron-react` application.",
+                "Created app to parse `JSON` reponses from REST API and parse `COBOL` files into `Markdown` tables for API documentation.",
                 "Implemented Chocolatey server, automating our app packaging and deployment.",
-                "Developed PowerShell script for Chocolatey package management and installs.",
-                "Crafted Node tool for generating extensive, sterile datasets.",
+                "Developed PowerShell script for clients for a 1-click Chocolatey package management and installs.",
+                "Created app for generating extensive, sterile datasets.",
             ],
         },
         {
