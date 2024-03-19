@@ -44,3 +44,7 @@ export interface LinkProps {
 export interface ButtonProps {
     children: React.ReactNode;
 }
+
+export interface ParagraphProps {
+    text: string;
+}

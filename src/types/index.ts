@@ -17,6 +17,7 @@ export interface Project {
     name: string;
     description: string;
     repo_url: string;
+    youtube_links: { title: string; url: string }[];
     demo_url?: string;
     images: string[];
     badges: ReactElement[];

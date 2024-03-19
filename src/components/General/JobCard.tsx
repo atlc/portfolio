@@ -10,7 +10,7 @@ const JobCard: React.FC<Job> = ({ position, is_relevant, name, url, startDate, e
     return (
         <Col tenths={9}>
             <div style={{ padding: "20px", border: `2px solid`, borderRadius: "12px", marginTop: "20px" }}>
-                <h1>{position}</h1>
+                <h1 style={{ margin: "0px 0px" }}>{position}</h1>
 
                 <Row>
                     <Col tenths={8}>

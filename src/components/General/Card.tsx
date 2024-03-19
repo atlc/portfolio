@@ -4,6 +4,7 @@ import styled from "styled-components";
 import useDarkMode from "../../hooks/useDarkMode";
 
 const StyledCard = styled.article<{ $bg: string; $contrast: string }>`
+    margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     background-color: ${(props) => props.$bg};

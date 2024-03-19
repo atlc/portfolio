@@ -10,6 +10,8 @@ import Redis from "./Redis";
 import Selenium from "./Selenium";
 import TypeScript from "./TypeScript";
 
+export const SIZE = "35px";
+
 export default {
     Arduino,
     LinkURL,
@@ -18,7 +20,7 @@ export default {
     Node,
     Photo,
     Postgres,
-    ReactIcon,
+    React: ReactIcon,
     Redis,
     Selenium,
     TypeScript,

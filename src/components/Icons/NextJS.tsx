@@ -1,12 +1,13 @@
 import React from "react";
 import useDarkMode from "../../hooks/useDarkMode";
+import { SIZE } from ".";
 
 const NextJS: React.FC = () => {
     const { isDark } = useDarkMode();
     const fill = isDark ? "#38bdf8" : "#0c4a6e";
 
     return (
-        <svg fill={fill} viewBox="0 0 15 15" height="50px" width="50px">
+        <svg fill={fill} viewBox="0 0 15 15" height={SIZE} width={SIZE}>
             <path
                 fill={fill}
                 fillRule="evenodd"
