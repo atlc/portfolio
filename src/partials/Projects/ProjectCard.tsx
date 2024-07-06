@@ -42,16 +42,16 @@ const ProjectCard: React.FC<Project> = ({ name, description, repo_url, badges, d
 
                 <div style={{ marginTop: "10px" }}>
                     <Row>
-                        <a rel="noreferrer" target="_blank" style={{ margin: "0px 10px" }} href={repo_url}>
+                        <a rel="noreferrer" target="_blank" style={{ margin: "0px 5px" }} href={repo_url}>
                             <Github />
                         </a>
                         {demo_url && (
-                            <a rel="noreferrer" target="_blank" style={{ margin: "0px 10px" }} href={demo_url}>
+                            <a rel="noreferrer" target="_blank" style={{ margin: "0px 5px" }} href={demo_url}>
                                 <Icons.LinkURL />
                             </a>
                         )}
                         {images.length ? (
-                            <div onClick={() => setActive(true)} style={{ margin: "0px 10px" }}>
+                            <div onClick={() => setActive(true)} style={{ margin: "0px 5px" }}>
                                 <Icons.Photo />
 
                                 <Lightbox
@@ -71,7 +71,7 @@ const ProjectCard: React.FC<Project> = ({ name, description, repo_url, badges, d
                 <hr />
                 <Row>
                     {badges.map((b, index) => (
-                        <span style={{ margin: "0px 10px" }} key={`${name}-badge-${index}`}>
+                        <span style={{ margin: "0px 5px" }} key={`${name}-badge-${index}`}>
                             {b}
                         </span>
                     ))}

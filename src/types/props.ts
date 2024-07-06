@@ -7,7 +7,7 @@ export interface ContainerProps {
 
 export interface RowProps {
     children: React.ReactNode;
-    layout?: "start" | "center" | "end";
+    layout?: "start" | "center" | "end" | "space-between";
     reverse?: boolean;
 }
 

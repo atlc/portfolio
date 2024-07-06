@@ -8,7 +8,7 @@ const Education: React.FC = () => {
     return (
         <Section parentId="education">
             <Row>
-                <Col tenths={10}>
+                <Col tenths={9}>
                     <Card>
                         <div style={{ padding: "20px" }}>
                             {/* <h2>B.S. Software Engineering (Present)</h2>

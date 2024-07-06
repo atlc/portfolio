@@ -51,18 +51,25 @@ const Nav: React.FC = () => {
         const opacity = height ? 0.85 : 1;
 
         const color = isDark ? "#38bdf8" : "#0c4a6e";
-        const bg = document.body.style.backgroundColor;
+        const bg = isDark ? "#1e293b" : "#e0f2fe";
 
-        const rgb = bg.replace("rgb(", "").replace(")", "").split(", ");
-        const [r, g, b] = rgb.map((num) => {
-            const parsed = parseInt(num);
-            const product = 0.75 * parsed;
+        const hexInt = parseInt(bg.replace("#", ""), 16);
+        let r = (hexInt >> 16) & 255;
+        let g = (hexInt >> 8) & 255;
+        let b = hexInt & 255;
+
+        console.log({ r, g, b });
+
+        [r, g, b] = [r, g, b].map((num) => {
+            const product = num * 0.75;
 
             return product > 255 ? 255 : product.toFixed(0);
         });
 
         const adjusted = `rgb(${r}, ${g}, ${b})`;
         const backgroundColor = height ? adjusted : bg;
+
+        console.log({ isDark, bg, color, adjusted });
 
         setStyle({ ...style, position, borderBottom: `1px solid ${color}`, opacity, color, backgroundColor });
     }, [height, isDark]);

@@ -4,6 +4,8 @@ import Row from "../../components/Layout/Row";
 import { Project } from "../../types";
 import ProjectCard from "./ProjectCard";
 import Badges from "../../components/Icons";
+import Card from "../../components/General/Card";
+import Col from "../../components/Layout/Col";
 
 const Projects: React.FC = () => {
     const projects: Project[] = [
@@ -23,7 +25,7 @@ const Projects: React.FC = () => {
         },
         {
             name: "Connections",
-            description: `This application is built for keeping track of my family's scoreboards for the NYT's 'Connections' game, storing the history of each individual player's board and providing analytical statistics and leaderboards for various performance metrics.`,
+            description: `An app for keeping track of my family's scoreboards for the NYT's 'Connections' game, storing the history of each player's board and providing analytical statistics and leaderboards for various performance metrics.`,
             repo_url: "https://github.com/atlc/connections",
             youtube_links: [],
             demo_url: "https://cartwright-connections-957c809c9a0a.herokuapp.com",
@@ -36,30 +38,12 @@ const Projects: React.FC = () => {
         },
         {
             name: "Video Stats",
-            description: "A NextJS app that takes all the URLs of programming videos I've done and consolidates their stats",
+            description: "A NextJS app that URLs of public programming videos I've done and scrapes their stats from YouTube",
             repo_url: "https://github.com/atlc/video-stats/",
             demo_url: "https://video-stats-atlc.vercel.app/",
             youtube_links: [],
             images: [],
             badges: [<Badges.NextJS />, <Badges.React />, <Badges.TypeScript />],
-        },
-        {
-            name: "Anti-Scam",
-            description:
-                "A targeted phishing campaign was sent towards the old college I worked at. I created a fake dataset generator with legitimate-appearing and localized data, then used Selenium to fill out the form ~150k times over the next few days to ruin the scam data.",
-            youtube_links: [
-                {
-                    title: "Part 1 - Data Setup",
-                    url: "https://www.youtube.com/watch?v=7wLS2qihyPY&t=15s",
-                },
-                {
-                    title: "Part 2 - Automation",
-                    url: "https://www.youtube.com/watch?v=NHgEMrZ5td0",
-                },
-            ],
-            repo_url: "https://github.com/atlc/anti-scammer-selenium",
-            images: [],
-            badges: [<Badges.Node />, <Badges.Selenium />, <Badges.TypeScript />],
         },
         {
             name: "World's Worst AIM",
@@ -92,9 +76,25 @@ const Projects: React.FC = () => {
     return (
         <Section noBottomBorder parentId="projects">
             <Row>
-                {projects.map((project, index) => (
-                    <ProjectCard key={`project-card-${index}`} {...project} />
-                ))}
+                <Col tenths={9}>
+                    <Card>
+                        <h3 style={{ textAlign: "center" }}>Below are a few projects that I've really enjoyed working on recently!</h3>
+                        <h5>
+                            In a typical project, the languages that I tend to work on will usually use Typescript, React, Node, and are usually started with
+                            one of my custom boilerplates or with NextJS. Style-wise, Bootstrap or Tailwind are my go-tos, though I sometimes use MUI or
+                            Styled-Components for a from-scratch approach, like this site! I tend to stick with relational DBs, usually Postgres or MySQL , and
+                            will have an occasional project using Redis or will sometimes venture into NoSQL with MongoDB. I've got projects deployed on just
+                            about everything, from self-hosted and cloud bare-metal servers, Heroku, Vercel (where this is hosted!), DigitalOcean (where this
+                            domain's DNS controlling runs), AWS, Render, Fly.io, Netlify, and I'm sure there's a handful more platforms where
+                            long-since-forgotten projects lurk.
+                        </h5>
+                        <Row layout="start">
+                            {projects.map((project, index) => (
+                                <ProjectCard key={`project-card-${index}`} {...project} />
+                            ))}
+                        </Row>
+                    </Card>
+                </Col>
             </Row>
         </Section>
     );
