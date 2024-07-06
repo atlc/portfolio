@@ -54,9 +54,9 @@ const Nav: React.FC = () => {
         const bg = isDark ? "#1e293b" : "#e0f2fe";
 
         const hexInt = parseInt(bg.replace("#", ""), 16);
-        let r = (hexInt >> 16) & 255;
-        let g = (hexInt >> 8) & 255;
-        let b = hexInt & 255;
+        let r: string | number = (hexInt >> 16) & 255;
+        let g: string | number = (hexInt >> 8) & 255;
+        let b: string | number = hexInt & 255;
 
         console.log({ r, g, b });
 
@@ -86,16 +86,32 @@ const Nav: React.FC = () => {
                 {!collapsed && (
                     <>
                         <Col>
-                            <Navlink onClick={handleCollapseOnMobile} link="#bio" text="about me" />
+                            <Navlink
+                                onClick={handleCollapseOnMobile}
+                                link="#bio"
+                                text="about me"
+                            />
                         </Col>
                         <Col>
-                            <Navlink onClick={handleCollapseOnMobile} link="#experience" text="experience" />
+                            <Navlink
+                                onClick={handleCollapseOnMobile}
+                                link="#experience"
+                                text="experience"
+                            />
                         </Col>
                         <Col>
-                            <Navlink onClick={handleCollapseOnMobile} link="#education" text="education" />
+                            <Navlink
+                                onClick={handleCollapseOnMobile}
+                                link="#education"
+                                text="education"
+                            />
                         </Col>
                         <Col>
-                            <Navlink onClick={handleCollapseOnMobile} link="#projects" text="projects" />
+                            <Navlink
+                                onClick={handleCollapseOnMobile}
+                                link="#projects"
+                                text="projects"
+                            />
                         </Col>
                         <Col>
                             <div onClick={toggleDarkMode}>{isDark ? <Sun /> : <Moon />}</div>
