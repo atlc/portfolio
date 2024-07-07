@@ -170,12 +170,10 @@ const Experience: React.FC = () => {
                     {jobs
                         .filter((j) => j.is_relevant)
                         .map((job, index) => (
-                            <JobCard {...job} key={`job-card-${index}`} />
-                        ))}
-                    {jobs
-                        .filter((j) => !j.is_relevant)
-                        .map((job, index) => (
-                            <JobCard {...job} key={`job-card-${index}`} />
+                            <JobCard
+                                {...job}
+                                key={`job-card-${index}`}
+                            />
                         ))}
                 </Card>
             </Row>

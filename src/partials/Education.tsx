@@ -11,11 +11,6 @@ const Education: React.FC = () => {
                 <Col tenths={9}>
                     <Card>
                         <div style={{ padding: "20px" }}>
-                            {/* <h2>B.S. Software Engineering (Present)</h2>
-                            <h4>Western Governors University</h4>
-
-                            <hr /> */}
-
                             <h1>A.S. Mathematics </h1>
                             <h3>Jefferson State Community College (2024)</h3>
                             <ul>

@@ -21,4 +21,5 @@ export interface Project {
     demo_url?: string;
     images: string[];
     badges: ReactElement[];
+    uses: string[];
 }
