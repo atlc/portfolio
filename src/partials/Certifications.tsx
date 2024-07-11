@@ -8,14 +8,16 @@ const Certifications: React.FC = () => {
     return (
         <Section parentId="certifications">
             <Row>
-                <Col tenths={9}>
+                <Col tenths={10}>
                     <Card>
-                        <h1>Certifications</h1>
+                        <div style={{ padding: "20px" }}>
+                            <h1 className="text-center">Certifications</h1>
 
-                        <Microsoft />
-                        <AWS />
-                        <LPI />
-                        <CompTIA />
+                            <Microsoft />
+                            <AWS />
+                            <LPI />
+                            <CompTIA />
+                        </div>
                     </Card>
                 </Col>
             </Row>
@@ -25,8 +27,8 @@ const Certifications: React.FC = () => {
 
 function AWS() {
     return (
-        <>
-            <h3>Amazon</h3>
+        <div style={{ border: "2px solid", borderRadius: "12px", margin: "2%", padding: "20px" }}>
+            <h2>Amazon</h2>
             <ul>
                 <li>
                     <h4>AWS Certified Cloud Practicioner (expected completion July 2024)</h4>
@@ -35,14 +37,14 @@ function AWS() {
                     <h4>AWS Certified Developer (expected completion August 2024)</h4>
                 </li>
             </ul>
-        </>
+        </div>
     );
 }
 
 function CompTIA() {
     return (
-        <>
-            <h3>CompTIA</h3>
+        <div style={{ border: "2px solid", borderRadius: "12px", margin: "2%", padding: "20px" }}>
+            <h2>CompTIA</h2>
             <ul>
                 <li>
                     <h4>
@@ -50,14 +52,14 @@ function CompTIA() {
                     </h4>
                 </li>
             </ul>
-        </>
+        </div>
     );
 }
 
 function LPI() {
     return (
-        <>
-            <h3>Linux Professional Institute</h3>
+        <div style={{ border: "2px solid", borderRadius: "12px", margin: "2%", padding: "20px" }}>
+            <h2>Linux Professional Institute</h2>
             <ul>
                 <li>
                     <h4>
@@ -68,14 +70,14 @@ function LPI() {
                     <h4>LPIC-1 (expected completion August 2024)</h4>
                 </li>
             </ul>
-        </>
+        </div>
     );
 }
 
 function Microsoft() {
     return (
-        <>
-            <h3>Microsoft</h3>
+        <div style={{ border: "2px solid", borderRadius: "12px", margin: "2%", padding: "20px" }}>
+            <h2>Microsoft</h2>
             <ul>
                 <li>
                     <h4>
@@ -102,7 +104,7 @@ function Microsoft() {
                     </h4>
                 </li>
             </ul>
-        </>
+        </div>
     );
 }
 

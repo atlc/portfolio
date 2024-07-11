@@ -30,3 +30,7 @@ hr {
     /* color: #0c4a6e; */
     /* color: #38bdf8; */
 }
+
+.text-center {
+    text-align: center;
+}

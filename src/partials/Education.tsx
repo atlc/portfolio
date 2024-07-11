@@ -8,9 +8,9 @@ const Education: React.FC = () => {
     return (
         <Section parentId="education">
             <Row>
-                <Col tenths={9}>
+                <Col tenths={10}>
                     <Card>
-                        <div style={{ padding: "20px" }}>
+                        <div style={{ border: `2px solid`, borderRadius: "12px", padding: "20px", margin: "5%" }}>
                             <h1>A.S. Mathematics </h1>
                             <h3>Jefferson State Community College (2024)</h3>
                             <ul>

@@ -31,6 +31,7 @@ const Projects: React.FC = () => {
             youtube_links: [],
             demo_url: "https://cartwright-connections-957c809c9a0a.herokuapp.com",
             images: [
+                "https://raw.githubusercontent.com/atlc/connections/main/media/Leaderboard_Responsive.png",
                 "https://raw.githubusercontent.com/atlc/connections/main/media/Dark_Wide_Puzzle_With_Comments.png",
                 "https://raw.githubusercontent.com/atlc/connections/main/media/Dark_Wide_Leaderboard.png",
                 "https://raw.githubusercontent.com/atlc/connections/main/media/Dark_Responsive.png",
@@ -94,7 +95,7 @@ const Projects: React.FC = () => {
             parentId="projects"
         >
             <Row>
-                <Col tenths={9}>
+                <Col tenths={10}>
                     <Card>
                         <h2 style={{ textAlign: "center" }}>Below are a few projects that I've been enjoying working on recently!</h2>
                         {/* <h4>

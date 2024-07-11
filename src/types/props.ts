@@ -30,6 +30,10 @@ export interface SectionProps {
 
 export interface CardProps {
     children: React.ReactNode;
+    hasBorder?: {
+        border: string;
+        radius: string;
+    };
 }
 
 export interface HamburgerProps {

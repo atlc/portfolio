@@ -167,14 +167,16 @@ const Experience: React.FC = () => {
         <Section parentId="experience">
             <Row>
                 <Card>
-                    {jobs
-                        .filter((j) => j.is_relevant)
-                        .map((job, index) => (
-                            <JobCard
-                                {...job}
-                                key={`job-card-${index}`}
-                            />
-                        ))}
+                    <div style={{ marginTop: "5%", marginBottom: "5%" }}>
+                        {jobs
+                            .filter((j) => j.is_relevant)
+                            .map((job, index) => (
+                                <JobCard
+                                    {...job}
+                                    key={`job-card-${index}`}
+                                />
+                            ))}
+                    </div>
                 </Card>
             </Row>
         </Section>

@@ -12,9 +12,12 @@ import MinHeightParagraph from "../../components/General/MinHeightParagraph";
 const ProjectCard: React.FC<Project> = ({ name, description, repo_url, badges, demo_url, images, uses }) => {
     const [active, setActive] = useState(false);
 
+    const border = { border: "2px solid", radius: "12px" };
+
     return (
         <Col tenths={3}>
-            <Card>
+            <Card hasBorder={border}>
+                {/* <Card> */}
                 <h1 style={{ textAlign: "center" }}>{name}</h1>
                 <MinHeightParagraph text={description} />
                 {/* 
