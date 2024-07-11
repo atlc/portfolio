@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Job } from "../../types";
 import Col from "../Layout/Col";
 import Row from "../Layout/Row";
-import Button from "./Button";
 
-const JobCard: React.FC<Job> = ({ position, is_relevant, name, url, startDate, endDate, description, highlights }) => {
+const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, description, highlights }) => {
     return (
         <Col tenths={9}>
             <div style={{ padding: "20px", border: `2px solid`, borderRadius: "12px", marginTop: "20px" }}>

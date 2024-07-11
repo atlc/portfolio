@@ -10,7 +10,7 @@ const DARK_MODE_KEY = "dark_mode";
 const DarkModeContext = createContext<DarkModeContext | undefined>(undefined);
 
 export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
         const savedDM = localStorage.getItem(DARK_MODE_KEY);

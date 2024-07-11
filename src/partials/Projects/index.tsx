@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
         {
             name: "Video Stats",
             description:
-                "A NextJS app that takes URLs of public programming videos I've done and scrapes their stats from YouTube. It's been through a few different iterations, but it serves the inital data through a cache from Mongo while it fetches the stats on a few dozen videos, then rehydrates everything with the updated stats.",
+                "This takes URLs of YouTube videos I've done, using Cheerio to fetch and parse the data. The current iteration serves cached data from Mongo while it retrieves current stats, then rehydrates everything with the newest data.",
             repo_url: "https://github.com/atlc/video-stats/",
             demo_url: "https://video-stats-atlc.vercel.app/",
             youtube_links: [],
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
         {
             name: "Event Scraper",
             description:
-                "This scrapes a couple dozen local event & music venues to consolidate the upcoming week's events into a unified, convenient calendar.",
+                "This scrapes (currently 18) calendars for local event & music venues to consolidate the upcoming week's events into a unified, convenient markdown calendar. The demo is in a non-headless mode because it'd be pretty boring to just see the terminal output, though in production it remains headless and is much faster!",
             repo_url: "https://github.com/atlc/bham-event-scraper",
             youtube_links: [],
             images: ["https://raw.githubusercontent.com/atlc/bham-event-scraper/main/demo.gif"],
@@ -62,14 +62,14 @@ const Projects: React.FC = () => {
         {
             name: "Arduino",
             description:
-                "There are a handful of different projects here - click the photo icon to see some pics/gifs of our Halloween costumes of anglerfish & arcade games, and some other miscellaneous Arduino projects.",
-            repo_url: "https://github.com/atlc/arduino-smoke-detector",
+                "There are a handful of different projects here - click the photo icon to see some pics/gifs of our Halloween costumes of anglerfish & arcade games, and some other miscellaneous Arduino projects, like an open, cost-effective, accessible, and modifiable CO/Smoke/LPG detector (although I promise we're using real ones at home!)",
+            repo_url: "",
             youtube_links: [{ title: "Anglerfish 01", url: "https://drive.google.com/file/d/1-Xm95aun4PjOvnhTsTIxgxcE1eDkLGnc/view" }],
             images: [
-                "/src/assets/angler_01.gif",
-                "/src/assets/angler_02.gif",
-                "https://i.imgur.com/mACOiIT.mp4",
-                "https://i.imgur.com/wrDjQLr.jpg",
+                "https://i.imgur.com/yHMzjRv.gif",
+                "https://i.imgur.com/TvR5Nxg.gif",
+                "https://i.imgur.com/fmg8Mc4.gif",
+                "https://i.imgur.com/MtcLUlt.jpeg",
                 "https://raw.githubusercontent.com/atlc/arduino-smoke-detector/master/demo.gif",
                 "https://raw.githubusercontent.com/atlc/arduino-smoke-detector/master/schematic.png",
             ],
@@ -96,8 +96,8 @@ const Projects: React.FC = () => {
             <Row>
                 <Col tenths={9}>
                     <Card>
-                        <h2 style={{ textAlign: "center" }}>Below are a few projects that I've really enjoyed working on recently!</h2>
-                        <h4>
+                        <h2 style={{ textAlign: "center" }}>Below are a few projects that I've been enjoying working on recently!</h2>
+                        {/* <h4>
                             In a typical project, the languages that I tend to work on will usually use Typescript, React, Node, and are usually started with
                             one of my custom boilerplates or with NextJS. Style-wise, Bootstrap or Tailwind are my go-tos, though I sometimes use MUI or
                             Styled-Components for a from-scratch approach, like this site! I tend to stick with relational DBs, usually Postgres or MySQL , and
@@ -105,8 +105,8 @@ const Projects: React.FC = () => {
                             about everything, from self-hosted and cloud bare-metal servers, Heroku, Vercel (where this is hosted!), DigitalOcean (where this
                             domain's DNS controlling runs), AWS, Render, Fly.io, Netlify, and I'm sure there's a handful more platforms where
                             long-since-forgotten projects lurk.
-                        </h4>
-                        <Row layout="start">
+                        </h4> */}
+                        <Row layout="end">
                             {projects.map((project, index) => (
                                 <ProjectCard
                                     key={`project-card-${index}`}

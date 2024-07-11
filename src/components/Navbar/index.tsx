@@ -109,6 +109,13 @@ const Nav: React.FC = () => {
                         <Col>
                             <Navlink
                                 onClick={handleCollapseOnMobile}
+                                link="#certifications"
+                                text="certifications"
+                            />
+                        </Col>
+                        <Col>
+                            <Navlink
+                                onClick={handleCollapseOnMobile}
                                 link="#projects"
                                 text="projects"
                             />

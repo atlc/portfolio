@@ -8,12 +8,9 @@ import Row from "../../components/Layout/Row";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import MinHeightParagraph from "../../components/General/MinHeightParagraph";
-import useDarkMode from "../../hooks/useDarkMode";
-// import useDarkMode from "../../hooks/useDarkMode";
 
-const ProjectCard: React.FC<Project> = ({ name, youtube_links, description, repo_url, badges, demo_url, images, uses }) => {
+const ProjectCard: React.FC<Project> = ({ name, description, repo_url, badges, demo_url, images, uses }) => {
     const [active, setActive] = useState(false);
-    const { isDark } = useDarkMode();
 
     return (
         <Col tenths={3}>
@@ -46,14 +43,16 @@ const ProjectCard: React.FC<Project> = ({ name, youtube_links, description, repo
 
                 <div style={{ marginTop: "10px" }}>
                     <Row>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            style={{ margin: "0px 5px" }}
-                            href={repo_url}
-                        >
-                            <Github />
-                        </a>
+                        {repo_url && (
+                            <a
+                                rel="noreferrer"
+                                target="_blank"
+                                style={{ margin: "0px 5px" }}
+                                href={repo_url}
+                            >
+                                <Github />
+                            </a>
+                        )}
                         {demo_url && (
                             <a
                                 rel="noreferrer"
@@ -95,8 +94,8 @@ const ProjectCard: React.FC<Project> = ({ name, youtube_links, description, repo
                             {b}
                         </span>
                     ))}
-                    {uses.join(", ")}
                 </Row>
+                <Row>{uses.join(", ")}</Row>
             </Card>
         </Col>
     );
