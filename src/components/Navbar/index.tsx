@@ -121,6 +121,15 @@ const Nav: React.FC = () => {
                             />
                         </Col>
                         <Col>
+                            <a
+                                style={{ textDecoration: "none" }}
+                                href="/resume.pdf"
+                                target="_blank"
+                            >
+                                resume
+                            </a>
+                        </Col>
+                        <Col>
                             <div onClick={toggleDarkMode}>{isDark ? <Sun /> : <Moon />}</div>
                         </Col>
                     </>
