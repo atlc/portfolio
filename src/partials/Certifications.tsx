@@ -31,7 +31,7 @@ function AWS() {
             <h2>Amazon</h2>
             <ul>
                 <li>
-                    <h4>AWS Certified Cloud Practicioner (expected completion July 2024)</h4>
+                    <h4>AWS Certified Cloud Practitioner</h4>
                 </li>
                 <li>
                     <h4>AWS Certified Developer (expected completion August 2024)</h4>
