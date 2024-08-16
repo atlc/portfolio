@@ -3,7 +3,7 @@ import { Job } from "../../types";
 import Col from "../Layout/Col";
 import Row from "../Layout/Row";
 
-const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, description, highlights }) => {
+const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, description, full_description }) => {
     return (
         <Col tenths={9}>
             <div style={{ padding: "20px", border: `2px solid`, borderRadius: "12px", marginTop: "20px" }}>
@@ -27,26 +27,20 @@ const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, descr
 
                 <Row>
                     <Col tenths={8}>
-                        <ul>
-                            {highlights.map((highlight, index) => (
-                                <li key={`job-highlight-${index}`}>
-                                    <h4 style={{ margin: "10px" }}>
-                                        {highlight.split(/(`.*?`)/).map((word, index) => {
-                                            return word.startsWith("`") && word.endsWith("`") ? (
-                                                <code
-                                                    style={{ fontFamily: "Courier new" }}
-                                                    key={`job-highlight-code-${index}`}
-                                                >
-                                                    {word.replace(/`/g, "")}
-                                                </code>
-                                            ) : (
-                                                <span key={`job-highlight-span-${index}`}>{word}</span>
-                                            );
-                                        })}
-                                    </h4>
-                                </li>
-                            ))}
-                        </ul>
+                        <h4 style={{ margin: "10px" }}>
+                            {full_description.split(/(`.*?`)/).map((word, index) => {
+                                return word.startsWith("`") && word.endsWith("`") ? (
+                                    <code
+                                        style={{ fontFamily: "Courier new" }}
+                                        key={`job-highlight-code-${index}`}
+                                    >
+                                        {word.replace(/`/g, "")}
+                                    </code>
+                                ) : (
+                                    <span key={`job-highlight-span-${index}`}>{word}</span>
+                                );
+                            })}
+                        </h4>
                     </Col>
                 </Row>
             </div>

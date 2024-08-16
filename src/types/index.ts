@@ -10,7 +10,7 @@ export interface Job {
     startDate: string;
     endDate: string;
     summary: string;
-    highlights: string[];
+    full_description: string;
 }
 
 export interface Project {

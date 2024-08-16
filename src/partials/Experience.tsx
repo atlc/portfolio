@@ -17,13 +17,8 @@ const Experience: React.FC = () => {
             endDate: "2024-06-01",
             summary:
                 "Fast-track coding bootcamp, teaching vital techs like Typescript, React, Node, MySQL. Hands-on projects and career support ensure seamless industry entry and graduate success.",
-            highlights: [
-                "Led daily classes and 1-on-1 mentor sessions, tailoring support to each student's needs.",
-                "Created personalized video lab reviews for every student's assignment to ensure complete comprehension of the materials.",
-                "Stayed updated on industry trends to keep curriculum materials up to date",
-                "Rewrote many portions of the curriculum, developing new materials, videos, and labs",
-                "Developed engaging tutorials for public YouTube videos",
-            ],
+            full_description:
+                "In my current role, I lead a comprehensive full-stack web development bootcamp where I mentor aspiring developers through their educational journey. I am responsible for developing and maintaining a dynamic curriculum that keeps pace with industry trends and technologies. My role also involves producing and sharing programming tutorials that are accessible to the broader developer community. This position allows me to combine my love for teaching with my technical expertise, ensuring students receive the best possible education and preparation for their careers.",
         },
         {
             name: "Hubbard Systems",
@@ -35,14 +30,8 @@ const Experience: React.FC = () => {
             startDate: "2019-06-01",
             endDate: "2020-03-01",
             summary: "A software company that provides a legal accounting app to aid businesses and law firms in managing accounts receivable.",
-            highlights: [
-                "Started DevOps department, automating internal processes.",
-                "Established complex and diverse CI/CD pipelines with Jenkins, centering around building our COBOL & electron-react application.",
-                "Created app to parse JSON reponses from our REST API, and parse our COBOL source code files into Markdown tables for API documentation.",
-                "Implemented Chocolatey server, automating our app packaging and deployment.",
-                "Developed PowerShell script for clients for a 1-click Chocolatey package management and installs.",
-                "Created app for generating extensive, sterile datasets.",
-            ],
+            full_description:
+                "At Hubbard Systems, I had the privilege of establishing the DevOps department from scratch. This role involved automating critical internal processes to streamline workflows and enhance efficiency across the development team. I spearheaded the creation and implementation of CI/CD pipelines for a complex application stack that included COBOL, Java, and Electron/React technologies. Additionally, I developed custom devtools and a comprehensive documentation system, ensuring that our development practices were efficient, reproducible, and well-documented.",
         },
         {
             name: "Jefferson State Community College",
@@ -54,13 +43,8 @@ const Experience: React.FC = () => {
             startDate: "2018-07-01",
             endDate: "2019-09-01",
             summary: "",
-            highlights: [
-                "Maintained 4 computer labs and 20 classrooms.",
-                "Provided desktop support to all students, and mentored Computer Science students.",
-                "Developed various batch scripts to resolve common issues students experienced in the labs.",
-                "Created userscripts for proactive printer monitoring, tracking status and supplies.",
-                "Automated timesheet completion and supervisor approval reminders using a userscript.",
-            ],
+            full_description:
+                "Maintained 4 computer labs and 20 classrooms, provided desktop support to all students, mentored Computer Science students, and developed batch scripts to resolve common issues in the labs. Additionally, I created userscripts for proactive printer monitoring, tracking status and supplies, and automated timesheet completion and supervisor approval reminders using a userscript.",
         },
         {
             name: "Caldwell Mill Animal Clinic",
@@ -72,9 +56,8 @@ const Experience: React.FC = () => {
             startDate: "2017-07",
             endDate: "2019-06",
             summary: "",
-            highlights: [
+            full_description:
                 "Managed clinic operations, including animal care and boarding. Tasks encompassed feeding, walking dogs, administering baths, and supporting veterinarians and technicians as required.",
-            ],
         },
         {
             name: "Uber",
@@ -86,10 +69,8 @@ const Experience: React.FC = () => {
             startDate: "2017-01-01",
             endDate: "2017-08-01",
             summary: "",
-            highlights: [
-                "Maintained a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber",
-                "Implemented a retro arcade emulation project in my center console using a Raspberry Pi and RetroPie to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished.",
-            ],
+            full_description:
+                "Maintained a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Implemented a retro arcade emulation project in my center console using a Raspberry Pi and RetroPie, allowing passengers to play classic video games during the ride, often resulting in requests to circle extra blocks to finish a Mario Kart match (or two).",
         },
         {
             name: "Vincari",
@@ -102,11 +83,8 @@ const Experience: React.FC = () => {
             endDate: "2017-02-01",
             summary:
                 "Vincari - Now Microsoft's Nuance Surgical CAPD (Computer-Assisted Physician Documentation), Nuance CAPD is a real-time, in-workflow solution that streamlines operative report and procedure note documentation to improve surgical documentation quality and reimbursement.",
-            highlights: [
-                "Developed new functionalities and resolved bugs for EMR/Operative documentation web app using Ruby on Rails, Angular.js, and MySQL.",
-                "Managed AWS infrastructure, primarily with EC2, VPCs, and S3.",
-                "Created a SumoLogic-based logging and analytics system, empowering our Implementation & Support teams in client assistance and reproducing client-side issues.",
-            ],
+            full_description:
+                "Developed new functionalities and resolved bugs for an EMR/Operative documentation web app using Ruby on Rails, Angular.js, and MySQL. Managed AWS infrastructure, primarily focusing on EC2, VPCs, and S3, and created a SumoLogic-based logging and analytics system that empowered our Implementation & Support teams to assist clients and reproduce client-side issues.",
         },
         {
             name: "Hubbard Systems",
@@ -118,11 +96,8 @@ const Experience: React.FC = () => {
             startDate: "2015-11-01",
             endDate: "2016-05-01",
             summary: "A software company that provides a legal accounting app to aid businesses and law firms in managing accounts receivable.",
-            highlights: [
-                "Trained and assisted clients in daily usage of accounting application.",
-                "Assisted clients with resolving application bugs.",
-                "Outside of application support, I was involved with SQL Server, Windows & Linux server administration.",
-            ],
+            full_description:
+                "Trained and assisted clients in the daily usage of an accounting application, helped resolve application bugs, and was involved in SQL Server, Windows, and Linux server administration.",
         },
         {
             name: "Greystone Golf & Country Club",
@@ -134,11 +109,8 @@ const Experience: React.FC = () => {
             startDate: "2011-04-01",
             endDate: "2015-11-01",
             summary: "",
-            highlights: [
-                "Worked in a variety of roles, serving in the Aquatics Department in the summers, working in reception and the poolside grill",
-                "I later transitioned to the Food and Beverage Department, where I worked in various roles related to dining - including serving in a fast, casual, everyday environment as well as our finest dining events",
-                "As event staff, I worked closely with clients and members as we prepared and set up events from small birthday parties to holiday parties, to golf tournaments or weddings which included hundreds of people",
-            ],
+            full_description:
+                "Worked in various roles within the Aquatics Department during the summers, handling reception and the poolside grill. Later transitioned to the Food and Beverage Department, where I served in both casual dining and high-end events, and worked closely with clients and members to prepare and set up events, ranging from small birthday parties to large-scale holiday parties, golf tournaments, and weddings.",
         },
     ];
 

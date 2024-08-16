@@ -43,10 +43,10 @@ const Education: React.FC = () => {
                             <ul>
                                 <li>
                                     <h4>
-                                        Between my healthcare studies at both Auburn University and Jefferson State, and finishing in Programming and
-                                        Mathematics has let me earn a cumulative 152 credit hours, exceeding the requirements of a Bachelor's Degree. While I
-                                        currently do not have one, I would love to eventually finish up with either a B.S. in Computer Science or Mathematics
-                                        (or both)!
+                                        My academic journey has been diverse, with studies in healthcare, programming, and mathematics across institutions such
+                                        as Auburn University and Jefferson State. These experiences have culminated in 152 earned credit hours, surpassing the
+                                        typical requirements for a Bachelor's degree. My coursework has provided a solid foundation in both technical and
+                                        analytical skills, which I have applied throughout my career.
                                     </h4>
                                 </li>
                             </ul>
