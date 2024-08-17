@@ -18,7 +18,7 @@ const Experience: React.FC = () => {
             summary:
                 "Fast-track coding bootcamp, teaching vital techs like Typescript, React, Node, MySQL. Hands-on projects and career support ensure seamless industry entry and graduate success.",
             full_description:
-                "In my current role, I lead a comprehensive full-stack web development bootcamp where I mentor aspiring developers through their educational journey. I am responsible for developing and maintaining a dynamic curriculum that keeps pace with industry trends and technologies. My role also involves producing and sharing programming tutorials that are accessible to the broader developer community. This position allows me to combine my love for teaching with my technical expertise, ensuring students receive the best possible education and preparation for their careers.",
+                "In my current role, I lead a comprehensive full-stack web development bootcamp (encompassing Typescript, React, Node, relational SQL, and auth) where I mentor aspiring developers through their educational journey. I am responsible for developing and maintaining a dynamic curriculum that keeps pace with industry trends and technologies. My role also involves producing and sharing programming tutorials that are accessible to the broader developer community. This position allows me to combine my love for teaching with my technical expertise, ensuring students receive the best possible education and preparation for their careers.",
         },
         {
             name: "Hubbard Systems",

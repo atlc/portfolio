@@ -36,7 +36,7 @@ function AWS() {
                     </h4>
                 </li>
                 <li>
-                    <h4>Certified Developer (expected completion August 2024)</h4>
+                    <h4>Certified Developer (expected completion September 2024)</h4>
                 </li>
             </ul>
         </div>
@@ -69,7 +69,7 @@ function LPI() {
                     </h4>
                 </li>
                 <li>
-                    <h4>LPIC-1 (expected completion August 2024)</h4>
+                    <h4>LPIC-1 (expected completion September 2024)</h4>
                 </li>
             </ul>
         </div>
