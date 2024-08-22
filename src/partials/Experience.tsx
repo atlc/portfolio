@@ -97,7 +97,7 @@ const Experience: React.FC = () => {
             endDate: "2016-05-01",
             summary: "A software company that provides a legal accounting app to aid businesses and law firms in managing accounts receivable.",
             full_description:
-                "Trained and assisted clients in the daily usage of an accounting application, helped resolve application bugs, and was involved in SQL Server, Windows, and Linux server administration.",
+                "Trained and assisted clients in the daily usage of our accounting application, and was involved in SQL Server, Windows, and Linux server administration.",
         },
         {
             name: "Greystone Golf & Country Club",
