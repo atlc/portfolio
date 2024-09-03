@@ -91,7 +91,7 @@ const Experience: React.FC = () => {
             is_relevant: true,
             location: "Birmingham/Remote",
             description: "Accounting/Legal Software",
-            position: "Application System Analyst",
+            position: "Application Systems Analyst",
             url: "https://collectionpartnersolutions.com/",
             startDate: "2015-11-01",
             endDate: "2016-05-01",
