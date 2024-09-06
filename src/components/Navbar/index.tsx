@@ -58,8 +58,6 @@ const Nav: React.FC = () => {
         let g: string | number = (hexInt >> 8) & 255;
         let b: string | number = hexInt & 255;
 
-        console.log({ r, g, b });
-
         [r, g, b] = [r, g, b].map((num) => {
             const product = num * 0.75;
 
@@ -68,8 +66,6 @@ const Nav: React.FC = () => {
 
         const adjusted = `rgb(${r}, ${g}, ${b})`;
         const backgroundColor = height ? adjusted : bg;
-
-        console.log({ isDark, bg, color, adjusted });
 
         setStyle({ ...style, position, borderBottom: `1px solid ${color}`, opacity, color, backgroundColor });
     }, [height, isDark]);

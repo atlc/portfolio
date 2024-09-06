@@ -5,7 +5,7 @@ interface DarkModeContext {
     toggleDarkMode: () => void;
 }
 
-const DARK_MODE_KEY = "dark_mode";
+export const DARK_MODE_KEY = "dark_mode";
 
 const DarkModeContext = createContext<DarkModeContext | undefined>(undefined);
 
