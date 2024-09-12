@@ -11,8 +11,19 @@ const Education: React.FC = () => {
                 <Col tenths={10}>
                     <Card>
                         <div style={{ border: `2px solid`, borderRadius: "12px", padding: "20px", margin: "5%" }}>
+                            <h1>B.S. Computer Science</h1>
+                            <h3><em>Western Governors University (2024 - Present)</em></h3>
+                            <ul>
+                                <li>
+                                    <h4>
+                                        I am currently enrolled with an expected completion date of May 2025.</h4>
+                                </li>
+                            </ul>
+
+                            <hr />
+
                             <h1>A.S. Mathematics </h1>
-                            <h3>Jefferson State Community College (2024)</h3>
+                            <h3><em>Jefferson State Community College (2024)</em></h3>
                             <ul>
                                 <li>
                                     <h4>Gained membership to Mu Alpha Theta, the math honors society</h4>
@@ -27,26 +38,12 @@ const Education: React.FC = () => {
                             <hr />
 
                             <h1>A.S. CIS - Programming </h1>
-                            <h3>Jefferson State Community College (2017)</h3>
+                            <h3><em>Jefferson State Community College (2017)</em></h3>
                             <ul>
                                 <li>
                                     <h4>
                                         The recipient of the 2016 College Scholars award, an award of distinction given to a high-performing student on the
                                         College Scholars' team
-                                    </h4>
-                                </li>
-                            </ul>
-
-                            <hr />
-
-                            <h1>Additional Academic Achievements</h1>
-                            <ul>
-                                <li>
-                                    <h4>
-                                        My academic journey has been diverse, with studies in healthcare, programming, and mathematics across institutions such
-                                        as Auburn University and Jefferson State. These experiences have culminated in 152 earned credit hours, surpassing the
-                                        typical requirements for a Bachelor's degree. My coursework has provided a solid foundation in both technical and
-                                        analytical skills, which I have applied throughout my career.
                                     </h4>
                                 </li>
                             </ul>

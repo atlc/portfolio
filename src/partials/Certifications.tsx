@@ -68,9 +68,6 @@ function LPI() {
                         <a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000614094/35tywaswu3">Linux Essentials</a>
                     </h4>
                 </li>
-                <li>
-                    <h4>LPIC-1 (expected completion September 2024)</h4>
-                </li>
             </ul>
         </div>
     );
