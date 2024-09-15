@@ -84,11 +84,11 @@ const Experience: React.FC = () => {
             summary:
                 "Vincari - Now Microsoft's Nuance Surgical CAPD (Computer-Assisted Physician Documentation), Nuance CAPD is a real-time, in-workflow solution that streamlines operative report and procedure note documentation to improve surgical documentation quality and reimbursement.",
             full_description:
-                "Developed new functionalities and resolved bugs for an EMR/Operative documentation web app using Ruby on Rails, Angular.js, and MySQL. Managed AWS infrastructure, primarily focusing on EC2, VPCs, and S3, and created a SumoLogic-based logging and analytics system that empowered our Implementation & Support teams to assist clients and reproduce client-side issues.",
+                "I created new features and fixed bugs for an EMR/Operative documentation app using Ruby on Rails, Angular.js, and MySQL. I managed AWS infrastructure, primarily within EC2, VPCs, and S3. A major project I accomplished was creating a SumoLogic-based logging and analytics system that empowered our Implementation & Support teams to replay the construction of any document.",
         },
         {
             name: "Hubbard Systems",
-            is_relevant: true,
+            is_relevant: false,
             location: "Birmingham/Remote",
             description: "Accounting/Legal Software",
             position: "Application Systems Analyst",

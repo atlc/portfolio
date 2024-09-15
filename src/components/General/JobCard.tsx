@@ -4,6 +4,10 @@ import Col from "../Layout/Col";
 import Row from "../Layout/Row";
 
 const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, description, full_description }) => {
+    const THIS_YEAR = new Date().getFullYear();
+    const JOB_YEAR_START = new Date(startDate).getFullYear();
+    const JOB_YEAR_END = new Date(endDate).getFullYear();
+
     return (
         <Col tenths={9}>
             <div style={{ padding: "20px", border: `2px solid`, borderRadius: "12px", marginTop: "20px" }}>
@@ -14,7 +18,7 @@ const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, descr
                         <h3>
                             <a href={url}>{name}</a>{" "}
                             <span>
-                                ({new Date(startDate).getFullYear()} - {new Date(endDate).getFullYear()})
+                                ({JOB_YEAR_START} - {JOB_YEAR_END === THIS_YEAR ? "Present" : JOB_YEAR_END})
                             </span>
                             <span>
                                 <em> {description}</em>
@@ -26,7 +30,7 @@ const JobCard: React.FC<Job> = ({ position, name, url, startDate, endDate, descr
                 <hr />
 
                 <Row>
-                    <Col tenths={8}>
+                    <Col tenths={9}>
                         <h4 style={{ margin: "10px" }}>
                             {full_description.split(/(`.*?`)/).map((word, index) => {
                                 return word.startsWith("`") && word.endsWith("`") ? (
