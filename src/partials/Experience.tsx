@@ -31,7 +31,7 @@ const Experience: React.FC = () => {
             endDate: "2020-03-01",
             summary: "A software company that provides a legal accounting app to aid businesses and law firms in managing accounts receivable.",
             full_description:
-                "At Hubbard Systems, I had the privilege of establishing the DevOps department from scratch. This role involved automating critical internal processes to streamline workflows and enhance efficiency across the development team. I spearheaded the creation and implementation of CI/CD pipelines for a complex application stack that included COBOL, Java, and Electron/React technologies. Additionally, I developed custom devtools and a comprehensive documentation system, ensuring that our development practices were efficient, reproducible, and well-documented.",
+                "In my second time working at Hubbard Systems, I was invited back to have the privilege of establishing the DevOps department from scratch. This role involved automating critical internal processes to streamline workflows and enhance efficiency across the development team. I spearheaded the creation and implementation of CI/CD pipelines for a complex application stack that included COBOL, Java, and Electron/React technologies. Additionally, I developed custom devtools and a comprehensive documentation system, ensuring that our development practices were efficient, reproducible, and well-documented.",
         },
         {
             name: "Jefferson State Community College",
@@ -88,7 +88,7 @@ const Experience: React.FC = () => {
         },
         {
             name: "Hubbard Systems",
-            is_relevant: false,
+            is_relevant: true,
             location: "Birmingham/Remote",
             description: "Accounting/Legal Software",
             position: "Application Systems Analyst",
