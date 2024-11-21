@@ -36,7 +36,7 @@ function AWS() {
                     </h4>
                 </li>
                 <li>
-                    <h4>Certified Developer (expected completion September 2024)</h4>
+                    <h4>Certified Developer (expected completion December 2024)</h4>
                 </li>
             </ul>
         </div>
@@ -80,9 +80,7 @@ function Microsoft() {
             <ul>
                 <li>
                     <h4>
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AndrewCartwright-0770/C0AF3E712D6EC64F?sharingId=27FBD064B975A40C">
-                            Azure Fundamentals
-                        </a>
+                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AndrewCartwright-0770/C0AF3E712D6EC64F?sharingId=27FBD064B975A40C">Azure Fundamentals</a>
                     </h4>
                 </li>
                 <li>
